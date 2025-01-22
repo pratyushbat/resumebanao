@@ -4,7 +4,7 @@ import {Router} from '@angular/router';
 @Component({
   selector: 'app-on-boarding-intro',
   template: `
-    <div style="margin-top: 3rem" class="overlay" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="50px">
+    <div  class="overlay form-flex" >
       <img width="36%" src="../../../assets/digiresume-green.png">
       <h1 class="res-onboarding-title">Welcome to Make my resume!</h1>
       <h2 class="res-onboarding-desc">From the whole team here, thank you for trying us. We are committed to make it easier for you to do
@@ -23,6 +23,8 @@ import {Router} from '@angular/router';
     h2 {
       color: rgba(51, 51, 51, 0.5);
     }
+
+  
   `]
 })
 

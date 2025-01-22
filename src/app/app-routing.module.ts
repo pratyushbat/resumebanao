@@ -11,8 +11,8 @@ import { LogoutComponent } from './components/logout.component';
 import { VerificationComplete } from './auth-guards/verification-completed';
 import { OnBoardingIncomplete } from './auth-guards/onboarding-in-complete';
 import { OnBoardingComplete } from './auth-guards/onboarding-complete';
-import { OnBoardingIntroComponent } from './container/on-boarding-intro.component';
-import { OnBoardingComponent } from './container/onboarding.component';
+import { OnBoardingIntroComponent } from './container/on-boarding/on-boarding-intro.component';
+import { OnBoardingComponent } from './container/on-boarding/onboarding.component';
 import { DashboardComponent } from './container/dashboard.component';
 
 const routes: Routes = [

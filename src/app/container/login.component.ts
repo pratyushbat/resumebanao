@@ -13,7 +13,7 @@ import { AlertService } from '../services/alert.service';
     selector: 'app-login',
     template: `
     
-    <form [formGroup]="loginForm" class="overlay" class="form-flex"  (ngSubmit)="loginForm.valid && login()">
+    <form [formGroup]="loginForm" class="overlay form-flex"   (ngSubmit)="loginForm.valid && login()">
         <!-- <div  > -->
         <img width="25%" src="assets/digiresume-green.png" />
         <mat-card  >
@@ -56,18 +56,9 @@ import { AlertService } from '../services/alert.service';
             width: 35rem;
             background-color: darkgrey;
 }
-.overlay {
-      width: 100%;
-      height: 100%;
-    }
 
-.form-flex{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction: column;
-    gap:40px;
-}
+
+
 
 .flex-end{
     display:flex;

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { takeWhile } from 'rxjs/operators';
-import { ResumeRepository } from '../repository/resume-repository';
-import { Resume } from '../models/resume';
+import { ResumeRepository } from '../../repository/resume-repository';
+import { Resume } from '../../models/resume';
 import { Router } from '@angular/router';
 
 @Component({

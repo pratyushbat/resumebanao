@@ -28,8 +28,23 @@ import { VerificationInComplete } from './auth-guards/verification-incompleted';
 import { OnBoardingIncomplete } from './auth-guards/onboarding-in-complete';
 import { OnBoardingComplete } from './auth-guards/onboarding-complete';
 import { LogoutComponent } from './components/logout.component';
-import { OnBoardingIntroComponent } from './container/on-boarding-intro.component';
-import { OnBoardingComponent } from './container/onboarding.component';
+
+import { ResumeRepository } from './repository/resume-repository';
+
+import { HeaderComponent } from './container/layout/header.component';
+import { FooterComponent } from './container/layout/footer.component';
+import { UploadComponent } from './container/on-boarding/tabs/upload.componet';
+import { UploadFromDiskComponent } from './container/on-boarding/tabs/upload-from-disk.component';
+import { LearnComponent } from './container/on-boarding/tabs/lean-ang.component';
+import { UploadImageComponent } from './container/on-boarding/tabs/upload-image.component';
+import { ContactDetailsComponent } from './components/resume-form/contact-details.component';
+import { ContactDetailFormComponent } from './components/resume-form/resume-dialogues/contact-detail-form.component';
+import { ImportYoutubeComponent } from './container/on-boarding/tabs/import-youtube.component';
+
+import { ResumeFormComponent } from './container/resume-form.component';
+import { ResumeNameComponent } from './container/on-boarding/resume-name.component';
+import { OnBoardingIntroComponent } from './container/on-boarding/on-boarding-intro.component';
+import { OnBoardingComponent } from './container/on-boarding/onboarding.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +55,17 @@ import { OnBoardingComponent } from './container/onboarding.component';
     VerificationComponent,
     OnBoardingComponent,
     OnBoardingIntroComponent,
+    ResumeNameComponent,
+    UploadComponent,
+    UploadImageComponent,
+    UploadFromDiskComponent,
+    ImportYoutubeComponent,
+    LearnComponent,
+    ResumeFormComponent,
+    HeaderComponent,
+    FooterComponent,
+    ContactDetailsComponent,
+    ContactDetailFormComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +88,7 @@ import { OnBoardingComponent } from './container/onboarding.component';
     VerificationComplete,
     VerificationInComplete,
     OnBoardingIncomplete,
-    OnBoardingComplete,],
+    OnBoardingComplete,ResumeRepository],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
