@@ -6,8 +6,8 @@ import {ContactDetailFormComponent} from './resume-dialogues/contact-detail-form
 @Component({
   selector: 'app-contact-details',
   template: `
-    <div style="position: relative" fxLayout="column" fxLayoutAlign="center center">
-      <div class="cards-outer-div" fxLayout="column" fxLayoutAlign="center center">
+    <div style="position: relative"  class="form-flex-auto">
+      <div class="cards-outer-div form-flex-auto"  >
         <ng-container *ngIf="!this.contactDetails">
           <h3 class="empty-heading">No Contact Details Added Yet</h3>
         </ng-container>
@@ -18,7 +18,7 @@ import {ContactDetailFormComponent} from './resume-dialogues/contact-detail-form
           <p class="resume-form-info-card-heading">{{this.contactDetails.city}}</p>
           <p class="resume-form-info-card-heading">{{this.contactDetails.country}}</p>
         </ng-container>
-        <div fxLayoutAlign="center center">
+        <div class="form-flex">
           <div class="hover-container">
             <div class="hover">
               <button class="resume-form-mat-icon-button" (click)="openContactForm()" mat-icon-button>

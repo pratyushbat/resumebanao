@@ -1,10 +1,9 @@
 import {Component, Input} from '@angular/core';
 import {Weakness} from '../../../models/weakness';
 import {MatDialog} from '@angular/material/dialog';
-import {ApiService} from '../../../services/api-service';
-import {AlertService} from '../../../services/alert-service';
 import {WeaknessFormComponent} from '../resume-dialogues/weakness-form.component';
 import {ResumeRepository} from '../../../repository/resume-repository';
+import { AlertService } from 'src/app/services/alert.service';
 
 @Component({
   selector: 'app-weakness-card',

@@ -1,10 +1,9 @@
 import {Component, Input} from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
-import {ApiService} from '../../../services/api-service';
-import {AlertService} from '../../../services/alert-service';
 import {Language} from '../../../models/language';
 import {LanguageFormComponent} from '../resume-dialogues/language-form.component';
 import {ResumeRepository} from '../../../repository/resume-repository';
+import { AlertService } from 'src/app/services/alert.service';
 
 @Component({
   selector: 'app-language-card',

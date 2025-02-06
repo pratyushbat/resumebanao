@@ -2,7 +2,7 @@ import {Component, Inject, OnInit} from '@angular/core';
 import {Education} from '../../../models/education';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {ApiService} from '../../../services/api-service';
+
 import {ResumeRepository} from '../../../repository/resume-repository';
 
 
@@ -28,7 +28,7 @@ export interface DataType {
         <mat-form-field>
           <input formControlName="field" matInput placeholder="Field"/>
           <mat-hint>
-            Example @ B.Tech in Computer Science
+            Example  B.Tech in Computer Science
           </mat-hint>
         </mat-form-field>
         <mat-form-field>
@@ -37,7 +37,7 @@ export interface DataType {
         <mat-form-field>
           <input formControlName="degree_type" matInput placeholder="Degree Type"/>
           <mat-hint>
-            Example @ Diploma,Graduation
+            Example  Diploma,Graduation
           </mat-hint>
         </mat-form-field>
         <mat-form-field>

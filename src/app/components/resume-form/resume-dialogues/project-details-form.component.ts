@@ -1,6 +1,5 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
-import {ApiService} from '../../../services/api-service';
 import {ProjectDetail} from '../../../models/project-detail';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {ResumeRepository} from '../../../repository/resume-repository';

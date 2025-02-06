@@ -2,9 +2,9 @@ import {Component, Input} from '@angular/core';
 import {Interest} from '../../../models/interest';
 import {MatDialog} from '@angular/material/dialog';
 import {InterestFormComponent} from '../resume-dialogues/interest-form.component';
-import {ApiService} from '../../../services/api-service';
-import {AlertService} from '../../../services/alert-service';
+
 import {ResumeRepository} from '../../../repository/resume-repository';
+import { AlertService } from 'src/app/services/alert.service';
 
 @Component({
   selector: 'app-interest-card',
@@ -12,7 +12,7 @@ import {ResumeRepository} from '../../../repository/resume-repository';
     <div style="position: relative" fxLayoutAlign="center center" fxLayout="column">
       <div style="height: 7rem" class="cards-outer-div" fxLayoutAlign="center center" fxLayout="column">
         <ng-container>
-          <h3 class="resume-form-info-card-heading">{{interest.interest | truncate}}</h3>
+          <h3 class="resume-form-info-card-heading">{{interest.interest }}</h3>
         </ng-container>
         <div fxLayout="row" fxLayoutAlign="center center" fxHide.xs>
           <div class="hover-container">

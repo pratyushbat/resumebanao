@@ -1,7 +1,6 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
-import {ApiService} from '../../../services/api-service';
 import {EmploymentHistory} from '../../../models/employment-history';
 import {ResumeRepository} from '../../../repository/resume-repository';
 
@@ -18,7 +17,7 @@ interface DataType {
         <mat-form-field>
           <input formControlName="designation" matInput placeholder="Designation"/>
           <mat-error>Designation is Required</mat-error>
-          <mat-hint>Example @ Web Developer</mat-hint>
+          <mat-hint>Example  Web Developer</mat-hint>
         </mat-form-field>
         <mat-form-field>
           <input formControlName="organisation" matInput placeholder="Organisation"/>

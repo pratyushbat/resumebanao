@@ -2,9 +2,9 @@ import {Component, Input} from '@angular/core';
 import {EmploymentHistory} from '../../../models/employment-history';
 import {MatDialog} from '@angular/material/dialog';
 import {EmploymentHistoryFormComponent} from '../resume-dialogues/employment-history-form.component';
-import {ApiService} from '../../../services/api-service';
-import {AlertService} from '../../../services/alert-service';
+
 import {ResumeRepository} from '../../../repository/resume-repository';
+import { AlertService } from 'src/app/services/alert.service';
 
 @Component({
   selector: 'app-employment-history-card',

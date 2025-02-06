@@ -1,8 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {Objective} from '../../../models/objective';
 import {MatDialog} from '@angular/material/dialog';
-import {ApiService} from '../../../services/api-service';
-import {AlertService} from '../../../services/alert-service';
+import {AlertService} from 'src/app/services/alert.service';
 import {ObjectiveFormComponent} from '../resume-dialogues/objective-form.component';
 import {ResumeRepository} from '../../../repository/resume-repository';
 

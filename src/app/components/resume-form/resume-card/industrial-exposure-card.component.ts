@@ -1,10 +1,9 @@
 import {Component, Input} from '@angular/core';
 import {IndustrialExposure} from '../../../models/industrial-exposure';
 import {MatDialog} from '@angular/material/dialog';
-import {ApiService} from '../../../services/api-service';
-import {AlertService} from '../../../services/alert-service';
 import {IndustrialExposureFormComponent} from '../resume-dialogues/industrial-exposure-form.component';
 import {ResumeRepository} from '../../../repository/resume-repository';
+import { AlertService } from 'src/app/services/alert.service';
 
 @Component({
   selector: 'app-industrial-exposure-card',

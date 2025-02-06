@@ -1,10 +1,10 @@
 import {Component, Input} from '@angular/core';
 import {Education} from '../../../models/education';
-import {ApiService} from '../../../services/api-service';
-import {AlertService} from '../../../services/alert-service';
+
 import {MatDialog} from '@angular/material/dialog';
 import {EducationFormComponent} from '../resume-dialogues/education-form.component';
 import {ResumeRepository} from '../../../repository/resume-repository';
+import { AlertService } from 'src/app/services/alert.service';
 
 @Component({
   selector: 'app-education-card',

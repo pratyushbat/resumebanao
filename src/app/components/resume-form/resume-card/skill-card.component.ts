@@ -1,9 +1,9 @@
 import {Component, Input} from '@angular/core';
 import {Skill} from '../../../models/skill';
 import {MatDialog} from '@angular/material/dialog';
-import {AlertService} from '../../../services/alert-service';
 import {SkillFormComponent} from '../resume-dialogues/skill-form.component';
 import {ResumeRepository} from '../../../repository/resume-repository';
+import { AlertService } from 'src/app/services/alert.service';
 
 @Component({
   selector: 'app-skill-card',

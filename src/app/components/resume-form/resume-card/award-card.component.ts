@@ -1,10 +1,9 @@
 import {Component, Input} from '@angular/core';
 import {AwardsAchivement} from '../../../models/awards-achivement';
 import {MatDialog} from '@angular/material/dialog';
-import {AlertService} from '../../../services/alert-service';
-import {ApiService} from '../../../services/api-service';
 import {AwardFormComponent} from '../resume-dialogues/award-form.component';
 import {ResumeRepository} from '../../../repository/resume-repository';
+import { AlertService } from 'src/app/services/alert.service';
 
 @Component({
   selector: 'app-award-card',

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, InjectionToken, OnInit } from '@angular/core';
 import { filter, map, switchMap, takeWhile } from 'rxjs/operators';
 import { ResumeRepository } from '../repository/resume-repository';
 import { ActivatedRoute } from '@angular/router';
@@ -141,7 +141,8 @@ import { Resume } from '../models/resume';
         }
     
         mat-expansion-panel {
-          background: #327c93;
+          background: #afafaf;
+          color:black;
           width: 90%;
         }
     
@@ -153,7 +154,8 @@ export class ResumeFormComponent implements OnInit {
     isAlive = true;
     loading = false;
   
-    constructor(private resumeRepo: ResumeRepository, private route: ActivatedRoute) {
+    constructor(private resumeRepo: ResumeRepository, private route: ActivatedRoute ,@Inject(TEST_TOKEN)private abc :any) {
+      console.log(this.abc)
     }
   
     ngOnDestroy() {
@@ -186,3 +188,5 @@ export class ResumeFormComponent implements OnInit {
       });
     }
 }
+export const TEST_TOKEN=new InjectionToken('test_toen')
+export const TEST_TOKENFF=new InjectionToken('test_toenF')
